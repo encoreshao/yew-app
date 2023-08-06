@@ -13,8 +13,14 @@ fn App() -> Html {
 
     html! {
         <div>
-            <button {onclick}>{ "+1" }</button>
-            <p>{ *counter }</p>
+            <h1>
+                {"Rust with Yew - "}
+                <code>
+                    {"Counter"}
+                </code>
+            </h1>
+            <button class="pulse" {onclick}>{ "+1" }</button>
+            <h1>{ *counter }</h1>
         </div>
     }
 }
